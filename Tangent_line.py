@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def pendiente(x, r, h):
-    return -(x-h)/np.sqrt(r**2-(x-h)**2)
-
+        return -(x-h)/np.sqrt(r**2-(x-h)**2)
+    
 def recta(m, x, x0, y0):
     return m*(x-x0)+y0
 
@@ -59,14 +59,21 @@ else:
     plt.hlines(cy, h, cx, color = 'limegreen') #Cuerda desde (h, cy) hasta (cx, cy)
     plt.plot(cx, cy, ".", color = 'purple') #Coordenada en y
     plt.plot(cx, k, ".", color = 'red') #Coordenada en x
-    
-    m = pendiente(cx, r, h)
-    xl = h - r
-    xr = x2 + r
-    yl = recta(m, xl, cx, cy)
-    yr = recta(m, xr, cx, cy)
-    plt.plot([xl, xr],[yl, yr], color = 'dimgray')
-    
+
+    if cx != x2:
+        m = pendiente(cx, r, h)
+        xl = h - r
+        xr = x2 + r
+        yl = recta(m, xl, cx, cy)
+        yr = recta(m, xr, cx, cy)
+        plt.plot([xl, xr],[yl, yr], color = 'dimgray')
+    else:
+        xl = x2
+        xr = x2
+        yl = k + r
+        yr = k - r
+        plt.plot([xl, xr],[yl, yr], color = 'dimgray')
+        
 plt.gca().set_aspect('equal')
 plt.grid() #Traza el cuadriculado
 plt.show() #Hace que aparezcan los graficos
