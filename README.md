@@ -14,9 +14,20 @@ This program could be useful on the understanding of primary functioning about t
 #### Tests:
 
 #### Results:
+*The x-coordinate given is in the range of the limits of the circumference*
 
+
+![imagen1](https://github.com/caster100701/Final-proyect-analytic-geometry-and-introduction-to-calculus/blob/main/Figure_1.png)
+
+
+*The x-coordinate given is not in the range of the limits of the circumference*
+
+
+![imagen2](https://github.com/caster100701/Final-proyect-analytic-geometry-and-introduction-to-calculus/blob/main/Figure_2.png)
+![imagen3](https://github.com/caster100701/Final-proyect-analytic-geometry-and-introduction-to-calculus/blob/main/Figure_3.png)
+![imagen4](https://github.com/caster100701/Final-proyect-analytic-geometry-and-introduction-to-calculus/blob/main/Figure_4.png)
 #### Conclusion:
-
+To work with the tangent line to a circumference, it is necessary to segment the figure into quadrants, this, because the circumference is not a function itself, doing it this way allows us to apply the tools of differential calculus to obtain the slope at the different points of the different quadrants of the circumference. In addition, there are very particular cases where the slope is infinite, that is, the line is parallel to the y-axis and as such they must be handled so as not to make mistakes and reach wrong conclusions regarding the scope of the calculus.
 #### Bibliography:
 1. Matplotlib documentation — Matplotlib 3.6.2 documentation. (s. f.). https://matplotlib.org/stable/index.html
 2. NumPy documentation — NumPy v1.23 Manual. (s. f.). https://numpy.org/doc/stable/
